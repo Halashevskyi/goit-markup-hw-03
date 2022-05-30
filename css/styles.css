@@ -107,8 +107,9 @@ body {
 .header-tel,
 .header-mail {
     display: inline-block;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 0;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -129,9 +130,18 @@ body {
     text-align: center;
 }
 
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .hero-title {
-    
-    margin-top: 0;
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -166,11 +176,6 @@ body {
 
 /* ---------SECTION 1 ПРЕИМУЩЕСТВА---------- */
 
-.description {
-    padding-top: 94px ;
-    padding-bottom: 94px;
-}
-
 .description-list { 
     display: flex;
 }
@@ -186,7 +191,6 @@ body {
 }
 
 .description-title {
-    margin-top: 0;
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
@@ -198,7 +202,6 @@ body {
 
 .description-text {
     margin-top: 10px;
-    margin-bottom: 0;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
@@ -207,7 +210,7 @@ body {
 /* -------SECTION 2 EXAMPLES OF WORKS about-- */
 
 .about {
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 
 .about-examples {
@@ -227,7 +230,6 @@ body {
 }
 
 .about-title {
-    margin-top: 0;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -241,12 +243,10 @@ body {
 
 .team { 
     background-color: var(--button-portfolio-bg);
-    padding-top: 94px;
-    padding-bottom: 94px;
+
 }
 
 .team-title {
-    margin-top: 0;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -299,6 +299,12 @@ body {
     color: var(--secondary-text-color);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* ------FOOTER---------- */
 
 .footer { 
@@ -344,11 +350,11 @@ body {
     margin-bottom: 9px;
 }
 
+
 .footter-list-text,
 .footer-mail-info,
 .footer-tel-info
  {  
-     margin-bottom: 9px;
     font-family: inherit;
     font-style: normal;
     line-height: 1.71;
@@ -356,9 +362,6 @@ body {
     color: var(--title-color);
 }
 
-.footer-tel-info {
-    margin-bottom: 0;
-}
 
 .footer-mail-info,
 .footer-tel-info{
@@ -366,12 +369,6 @@ body {
 }
 
 /*------ Portfolio.html ---------*/
-
-
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .portfolio-list { 
     display: flex;
@@ -419,7 +416,7 @@ body {
 }
 
 .portfolio-container {
-    padding: 20px 24px;
+    padding: 20px 20px;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
@@ -434,19 +431,12 @@ body {
 
 }
 
-.portfolio-img,
-.about-img,
-.team-img {
-    display: block;
-}
-
 .portfolio-link {
     text-decoration: none;
 }
 
 .portfolio-name {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -455,8 +445,6 @@ body {
 }
 
 .portfolio-text {
-    margin-top: 0;
-    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
